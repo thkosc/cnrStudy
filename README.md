@@ -1,7 +1,7 @@
 Program to probe more efficient coherent noise removal (CNR) algorithms in comparison to the ones already in place in LArSoft.
 
 Get the code :
-git clone
+git clone https://github.com/thkosc/cnrStudy
 
 Compile the code :
 make
