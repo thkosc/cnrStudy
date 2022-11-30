@@ -146,7 +146,13 @@ try{
 	auto const& mRawDigits 	= *ev.getValidHandle< std::vector<raw::RawDigit> >(tagRawDigit);
 	auto const& mWires 	= *ev.getValidHandle< std::vector<recob::Wire> >(tagRecobWire);
 
-	std::cout << "sizes = " << mRawDigits.size() << "\t" << mWires.size() << std::endl;
+//	std::cout << "sizes = " << mRawDigits.size() << "\t" << mWires.size() << std::endl;
+	
+	// ajout du code ici
+	// ...........
+	// ...........
+	// ...........
+
 
 	} // end loop over events
 
