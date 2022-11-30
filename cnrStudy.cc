@@ -86,7 +86,7 @@ bool isF = false;
 bool isHelp = false;
 
 //while ( ( cc=getopt(argc, argv, "f:n:o:v:h")) != -1 )
-while ( (cc = getopt_long(argc, argv, "c:f:h0", long_option, 0)) != -1)
+while ( (cc = getopt_long(argc, argv, "c:f:n:h0", long_option, 0)) != -1)
 {
 switch(cc)
 	{
@@ -97,6 +97,9 @@ switch(cc)
 	case 'f':
 	    fFileName = optarg;
 	    isF = true;
+	    break;
+	case 'n':
+	    iev = std::atoi(optarg);
 	    break;
 	case 'h':
 	    PrintHelp();
@@ -146,7 +149,7 @@ try{
 	auto const& mRawDigits 	= *ev.getValidHandle< std::vector<raw::RawDigit> >(tagRawDigit);
 	auto const& mWires 	= *ev.getValidHandle< std::vector<recob::Wire> >(tagRecobWire);
 
-//	std::cout << "sizes = " << mRawDigits.size() << "\t" << mWires.size() << std::endl;
+	std::cout << "sizes = " << mRawDigits.size() << "\t" << mWires.size() << std::endl;
 	
 	// ajout du code ici
 	// ...........

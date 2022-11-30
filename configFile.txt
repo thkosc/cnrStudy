@@ -1,2 +1,2 @@
-rawdigit: 	tpcrawdecoder:daq
-recobwire: 	caldata:dataprep
+rawdigit: tpcrawdecoder:daq
+recobwire: caldata:dataprep
